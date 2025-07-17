@@ -1,0 +1,105 @@
+/* form.css — Pro Level Design */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #f0f4f8, #d9e4f5);
+  padding: 30px;
+  color: #222;
+}
+
+h1 {
+  color: #004aad;
+  margin-bottom: 20px;
+  font-size: 32px;
+}
+
+form {
+  background: white;
+  padding: 30px 40px;
+  max-width: 600px;
+  margin: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: 0.3s ease;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: #004aad;
+  outline: none;
+  box-shadow: 0 0 8px rgba(0,74,173,0.2);
+}
+
+button {
+  margin-top: 25px;
+  background-color: #004aad;
+  color: white;
+  padding: 14px 25px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #003380;
+  transform: scale(1.02);
+}
+
+#successMessage {
+  text-align: center;
+  margin-top: 25px;
+  font-size: 18px;
+  color: green;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 14px;
+  color: #555;
+}
+
+footer a {
+  color: #004aad;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  color: #e91e63;
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 600px) {
+  form {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+}
