@@ -1,125 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Knowledge Academy</title>
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Knowledge Academy</title>
+  <link rel="stylesheet" href="css/index.css"/>
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"/>
+  <style>
+    /* RESPONSIVE FIX FOR TOPPER SECTION */
+    .topper-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 30px;
+      margin-top: 20px;
+    }
 
+    .topper-card {
+      text-align: center;
+      width: 250px;
+    }
+
+    .topper-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    @media (max-width: 600px) {
+      .topper-section {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .topper-card {
+        width: 80%;
+      }
+    }
+
+    header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;
+    }
+
+    header > div {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      gap: 20px;
+      margin-top: 10px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    main {
+      padding: 15px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    section {
+      margin-bottom: 30px;
+    }
+
+    h2, h3 {
+      color: #003366;
+    }
+
+    footer {
+      padding: 20px;
+      text-align: center;
+      background: #f2f2f2;
+    }
+
+    a {
+      color: #0066cc;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <div style="display: flex; align-items: center;">
-            <img src="img/WhatsApp Image 2025-07-17 at 10.34.01_32d52234.jpg"  alt="Error" width="60px" style="margin-right: 10px;">
-            <h1>The Knowledge Academy</h1>
-        </div>
-<nav>
-    <ul>
-        <li><a href="index.html"><img src="img/home logo.png" width="20px" alt="Error"> Home</a></li>
-        <li><a href="https://www.instagram.com/shahzaib_rana110" target="_blank"><img src="img/Instagram Logo (PNG-720p) - Vector69Com.png" width="20px" alt="Error"> Instagram</a></li>
-        <li><a href="https://api.whatsapp.com/send/?phone=923200987924&text&type=phone_number&app_absent=0"  target="_blank
-            "><img src="img/pngimg.com - whatsapp_PNG21.png" width="20px" alt="Error"> Contact</a></li>
-    </ul>
-</nav>
-    </header>
-    <main>
-        <section>
-            <h2>➤Welcome to The Knowledge Academy:</h2>
-            <p>Quality Tuition for Class 1 to Matric & O-Level Students  <a href="https://api.whatsapp.com/send/?phone=923200987924&text&type=phone_number&app_absent=0" target="
-                _blank">Contact Us</a></p>
-        </section>
-        <section>
-            <h3>➤ Why Choose Us:</h3>
-            <ul>
-                <li>✓ Experienced Instructors</li>
-                <li>✓ Industry-Relevant Courses</li>
-                <li>✓ Affordable Fees</li>
-                <li>✓ Certification After Completion</li>
-            </ul>
-        </section>
-        <section>
-            <h3>
-                ➤ Highlights:
-            </h3>
-            <ul >
-                <li>Experienced & Caring Teachers</li>
-                <li>Daily Homework Help</li>
-                <li>Monthly Progress Tests</li>
-                <li>Result-Oriented Approach</li>
-                <li>Separate Batches for Girls & Boys</li>
-            </ul>
-        </section>
-        <section>
-            <h3>➤ Subjects We Teach:</h3>
-            <ul>
-                <li>Mathematics</li>
-                <li>English Grammar & Writing</li>
-                <li>Science (Physics, Chemistry, Biology)</li>
-                <li>Urdu, Islamiat, Computer Science</li>
-            </ul>
-        </section>
-        <section>
-            <h3>➤ Timings:</h3>
-            <ul>
-                <li>Morning Batch: 8am – 10am (In Summer Vacation)</li>
-                <li>Evening Batch: 3pm – 6pm</li>
-            </ul>
-            <p>Note: Timings may vary during holidays and special occasions.</p>
-        </section>
-        <section>
-            <h3>➤ Admission Process:</h3>
-            <ul>
-                <li>Step 1: Contact Us via WhatsApp</li>
-                <li>Step 2: Schedule a Free Trial Class</li>
-                <li>Step 3: Complete the Registration Form</li>
-                <li>Step 4: Pay the Admission Fee</li>
-            </ul>
-        </section>
-        <section>
-            <h3 style="text-align:center;">➤ Last Year Toppers:</h3>
-            <div style="display: flex; justify-content: center; gap: 40px; align-items: flex-start; margin-top: 20px;">
-                <div style="text-align: center;">
-                    <img src="img/shahzaib.jpg" width="200px" alt="Error" style="display: block; margin: 0 auto 10px auto;">
-                    <h4>Shahzaib Aslam</h4>
-                    <p>Class 10, Roll No: 134641, Marks: 950/1100</p>
-                </div>
-                <div style="text-align: center;">
-                    <img src="img/hafiz.jpg" width="200px" alt="Error" style="display: block; margin: 0 auto 10px auto;">
-                    <h4>Hafiz Abuzar</h4>
-                    <p>Class 10, Roll No: 134642, Marks: 940/1100</p>
-                </div>
-            </div>
-        </section>
-        <section>
-            <h3>➤ About the Academy:</h3>
-            <p>The Knowledge Academy is dedicated to providing quality education to students from Class 1 to Matric & O-Level. Our experienced instructors and comprehensive curriculum ensure that every student receives the support they need to succeed.</p>
-            <p>We believe in a result-oriented approach, focusing on individual student needs and fostering a positive learning environment. Our academy is equipped with modern teaching aids and resources to enhance the learning experience.</p>
-        </section>
-        <section>
-            <h3>➤ Founder Info:</h3>
-            <p>Sir Mudassar Manzoor – Founder & Math Specialist  
-Double Msc Mathematics | 10+ Years Experience  
-Passionate about making students fall in love with learning.
-</p>
-        </section>
-        <section>
-            <h3>➤ Contact Info:</h3>
-            <p>📍 Address: Street #1, Pind Wali Masjid , Dharmewala</p>
-            <p>📞 Phone: +92 320 0987924</p>
-            <p>📧 Email: shahzaibrana401@gmail.com</p>
-            <p>📱 WhatsApp: +92 320 0987924   (Also Use Contact Button.)</p>
-        </section>
-        <section>
-            <h3>➤ Admission Form: </h3>
-            <p>To enroll in our academy, please fill out the <a href="form.html" target="_blank">Get Admission Form</a>.</p>
-        </section>
-    </main>
-    <hr>
-    <footer align="right">
-        <p>&copy; 2025 The Knowledge Academy. All rights reserved.</p>
-        <p>Follow us on <a href="https://www.instagram.com/shahzaib_rana110" target="_blank">Instagram</a> for updates.</p>
+  <header>
+    <div>
+      <img src="img/WhatsApp Image 2025-07-17 at 10.34.01_32d52234.jpg" alt="Logo" width="60"/>
+      <h1>The Knowledge Academy</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html"><img src="img/home logo.png" width="20"/> Home</a></li>
+        <li><a href="https://www.instagram.com/shahzaib_rana110" target="_blank"><img src="img/Instagram Logo (PNG-720p) - Vector69Com.png" width="20"/> Instagram</a></li>
+        <li><a href="https://api.whatsapp.com/send/?phone=923200987924&text&type=phone_number&app_absent=0" target="_blank"><img src="img/pngimg.com - whatsapp_PNG21.png" width="20"/> Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
+  <main>
+    <section>
+      <h2>➤ Welcome to The Knowledge Academy:</h2>
+      <p>Quality Tuition for Class 1 to Matric & O-Level Students <a href="https://api.whatsapp.com/send/?phone=923200987924" target="_blank">Contact Us</a></p>
+    </section>
+
+    <section>
+      <h3>➤ Why Choose Us:</h3>
+      <ul>
+        <li>✓ Experienced Instructors</li>
+        <li>✓ Industry-Relevant Courses</li>
+        <li>✓ Affordable Fees</li>
+        <li>✓ Certification After Completion</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>➤ Highlights:</h3>
+      <ul>
+        <li>Experienced & Caring Teachers</li>
+        <li>Daily Homework Help</li>
+        <li>Monthly Progress Tests</li>
+        <li>Result-Oriented Approach</li>
+        <li>Separate Batches for Girls & Boys</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>➤ Subjects We Teach:</h3>
+      <ul>
+        <li>Mathematics</li>
+        <li>English Grammar & Writing</li>
+        <li>Science (Physics, Chemistry, Biology)</li>
+        <li>Urdu, Islamiat, Computer Science</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>➤ Timings:</h3>
+      <ul>
+        <li>Morning Batch: 8am – 10am (In Summer Vacation)</li>
+        <li>Evening Batch: 3pm – 6pm</li>
+      </ul>
+      <p>Note: Timings may vary during holidays and special occasions.</p>
+    </section>
+
+    <section>
+      <h3>➤ Admission Process:</h3>
+      <ul>
+        <li>Step 1: Contact Us via WhatsApp</li>
+        <li>Step 2: Schedule a Free Trial Class</li>
+        <li>Step 3: Complete the Registration Form</li>
+        <li>Step 4: Pay the Admission Fee</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3 style="text-align:center;">➤ Last Year Toppers:</h3>
+      <div class="topper-section">
+        <div class="topper-card">
+          <img src="img/shahzaib.jpg" alt="Shahzaib Aslam"/>
+          <h4>Shahzaib Aslam</h4>
+          <p>Class 10, Roll No: 134641, Marks: 950/1100</p>
+        </div>
+        <div class="topper-card">
+          <img src="img/hafiz.jpg" alt="Hafiz Abuzar"/>
+          <h4>Hafiz Abuzar</h4>
+          <p>Class 10, Roll No: 134642, Marks: 940/1100</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h3>➤ About the Academy:</h3>
+      <p>The Knowledge Academy is dedicated to providing quality education to students from Class 1 to Matric & O-Level. Our experienced instructors and comprehensive curriculum ensure that every student receives the support they need to succeed.</p>
+      <p>We believe in a result-oriented approach, focusing on individual student needs and fostering a positive learning environment. Our academy is equipped with modern teaching aids and resources to enhance the learning experience.</p>
+    </section>
+
+    <section>
+      <h3>➤ Founder Info:</h3>
+      <p>Sir Mudassar Manzoor – Founder & Math Specialist<br>
+        Double Msc Mathematics | 10+ Years Experience<br>
+        Passionate about making students fall in love with learning.</p>
+    </section>
+
+    <section>
+      <h3>➤ Contact Info:</h3>
+      <p>📍 Address: Street #1, Pind Wali Masjid, Dharmewala</p>
+      <p>📞 Phone: +92 320 0987924</p>
+      <p>📧 Email: shahzaibrana401@gmail.com</p>
+      <p>📱 WhatsApp: +92 320 0987924 (Also Use Contact Button.)</p>
+    </section>
+
+    <section>
+      <h3>➤ Admission Form: </h3>
+      <p>To enroll in our academy, please fill out the <a href="form.html" target="_blank">Get Admission Form</a>.</p>
+    </section>
+  </main>
+
+  <hr>
+
+  <footer>
+    <p>&copy; 2025 The Knowledge Academy. All rights reserved.</p>
+    <p>Follow us on <a href="https://www.instagram.com/shahzaib_rana110" target="_blank">Instagram</a> for updates.</p>
+  </footer>
 </body>
 </html>
-
